@@ -1,0 +1,491 @@
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    background-color: #fff;
+}
+a {
+    color: #313131;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+/*头部开始*/
+
+header {
+    height: 116px;
+    color: #313131;
+    /*background-color: red;*/
+}
+header div.wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 116px;
+}
+header div.header_left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*width: 26%;*/
+}
+ul, li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+header ul.header_right {
+    position: absolute;
+    top: 48px;
+    right: 12px;
+    right: 3%;
+}
+header div.header_left a.header_logo {
+    /*width: 376px;*/
+    /*width: 100%;*/
+    /* height: 116px; */
+    display: block;
+}
+header div.header_left a.header_logo img {
+    /*width: 100%;*/
+    width: 377px;
+    /* height: 116px; */
+    vertical-align: top;
+}
+header ul.header_right li.item {
+    float: left;
+    display: list-item;
+}
+header ul.header_right li.item a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 65px;
+}
+header ul.header_right li.item a:hover{color: #000;font-weight: bold;}
+header ul.header_right li.item a:last-child {
+    padding-right: 0;
+}
+/*头部结束*/
+
+/*轮播开始*/
+
+div.banner_bg {
+    background-color: #fff;
+    /*height: 1132px;*/
+    position: relative;
+}
+div.banner_bg div.swiper-slide {
+    width: 100%;
+    height: 820px;
+}
+div.banner_bg div.slide1 {
+    /* background-color: red; */
+    background: url(../images/banner.jpg); 
+}
+div.banner_bg div.slide2 {
+    /* background-color:green; */
+    background: url(../images/1.jpg); 
+}
+div.banner_bg div.slide3 {
+    /* background-color:yellow; */
+    background: url(../images/banner.jpg); 
+}
+div.banner_bg div.swiper_text {
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    margin-left: -227px;
+    font-size: 50px;
+    color: white;
+}
+/*
+div.banner_bg div.text{
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    width: 400px;
+    height: 150px;
+    z-index: 9;
+}
+div.banner_bg div.ms{
+    position: absolute;
+    left: 40%;
+    line-height: 20px;
+    width: 100%;
+    color: #555;
+}
+div.banner_bg img.img{
+    width: 100%;
+    visibility: hidden;
+}*/
+
+div.banner_bg div.banner_btn {
+    position: absolute;
+    bottom: 90px;
+    text-align: center;
+    z-index: 10;
+}
+div.banner_bg div.banner_btn span {
+    width: 10px;
+    height: 10px;background: #fff;
+}
+/*轮播结束*/
+
+/*工业开始*/
+
+div.industry {
+    background: url("../images/bg.png") top center no-repeat;
+    background-size:100% auto;padding:30px 10px;
+    /*width: 88%;*/
+    max-width: 1238px;
+    /*height: 265px;*/
+   /* position: absolute;
+    top: 730px;
+    left: 50%;
+    transform: translateX(-50%);*/
+    /*margin-left:-618px;*/
+    margin: -110px auto 100px;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    /*box-shadow: -1px -15px 15px rgba(0, 0, 0, .3);*/
+    text-align: center;
+}
+/* div.industry div.industry_item {
+    float:left;
+    display: inline-block;
+    margin-right: 3%;
+    margin-top: 40px;
+    text-align: center;
+    width: 25%;
+}
+div.industry div.industry_item:first-child {
+    margin-left: 4%;
+}
+div.industry div.industry_item:last-child {
+    margin-right: 4%;
+} */
+div.industry li.industry_item {
+    display: inline-block;
+    /*position: absolute;*/
+    margin-top:38px;
+    width: 28.8%;
+    margin:0 1.5%;display: inline-block;
+}
+div.industry li.industry_item:first-child{
+    margin-left: 2%;
+}
+div.industry ul{
+    overflow: hidden;margin-top: 40px;
+}
+/* div.industry li.industry_item:first-child{
+    left: 3.3%;
+    top: 14%;
+    width: 28%;
+}
+div.industry li.industry_item:nth-child(2){
+    left: 35.8%;
+    top: 14%;
+    width: 28%;
+}
+div.industry li.industry_item:last-child{
+    right: 3.3%;
+    top: 14%;
+    width: 28%;
+} */
+div.industry li.industry_item div.img_box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+div.industry li.industry_item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.6s;
+    border-radius: 5px;
+}
+div.industry li.industry_item img:hover {
+    transform: scale(1.05);
+}
+div.industry li.industry_item p.industry_text_ch {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #30333B;
+    line-height: 32px;
+}
+div.industry li.industry_item p.industry_text_en {
+    font-size: 14px;
+    color: #9E9E9E;
+}
+/*工业结束*/
+
+/*页脚开始*/
+
+footer {
+    background-color: #30333B;
+    height: 170px;
+    text-align: center;
+    font-size: 14px;
+    font-family: MicrosoftYaHeiLight;
+    color: white;
+}
+footer p {
+    line-height: 30px;
+}
+footer p:first-child {
+    padding-top: 63px;
+}
+footer p span {
+    margin-right: 28px;
+}
+/*页脚结束*/
+
+
+/* header和工业对页面缩放进行适应开始 */
+@media screen and (max-width: 1400px) {
+    header ul.header_right li.item a {
+        padding: 0 30px;
+        font-size: 14px;
+    }
+    header div.header_left{
+        width: 26%;left: 2%;
+        /* height: 106px; */
+    }
+    header div.header_left a.header_logo {
+        /*width: 366px;*/
+        width: 100%;
+    }
+    header div.header_left a.header_logo img{
+        width: 100%;
+        /* height: 106px; */
+    }
+    div.industry {
+        /*width:1100px;*/
+        /*margin-left:-568px;*/
+        width: 88%;
+        margin: -80px auto 80px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    header ul.header_right li.item a {
+        padding-left: 25px;
+        font-size: 12px;
+    }
+header div.header_left{
+        /* height: 110px; */
+        width: 26%;
+    }    
+    header div.header_left a.header_logo {
+        /*width: 320px;*/
+        width: 100%;
+    }
+header div.header_left a.header_logo img{
+        width: 100%;
+    }    
+    div.industry {
+        /*width:904px;*/
+        /*margin-left:-468px;*/
+        width: 88%;
+        margin: -80px auto 60px;
+    }
+}
+@media screen and (max-width: 864px) {
+    header ul.header_right li.item a {
+        padding-left: 15px;
+        font-size: 10px;
+    }
+/*  header div.header_left{
+       width: 28%;
+   }    
+   header div.header_left a.header_logo {
+       width: 280px;
+       width: 100%;
+   }  */
+header div.header_left a.header_logo img{
+         width: 233px;
+        height: 72px; 
+        /* width: 100%; */
+    }    
+    div.industry {
+        width:760px;
+        margin: -80px auto 50px;
+        /*margin-left:-368px;*/
+        /*width: 88%;*/
+    }
+}
+/* header和工业对页面缩放进行适应结束 */
+/* menuBox开始 */
+
+.menu-handler {
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    display: none;
+    margin-left: 15px;
+    z-index: 10010;
+    transition: all .3s ease;
+}
+.menu-handler .burger {
+    width: 24px;
+    height: 2px;
+    background: #000;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    left: 50%;
+    margin: 0px 0px 0px -12px;
+    transform-origin: center;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    -ms-transform-origin: center;
+}
+.menu-handler .burger-2 {
+    top: 27px;
+}
+.menu-handler .burger-3 {
+    top: 35px;
+}
+.header-fixed .menu-handler {
+    margin-top: -15px;
+}
+.menu-handler.active .burger-1 {
+    top: 27px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.menu-handler.active .burger-2 {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+}
+.menu-handler.active .burger-3 {
+    top: 27px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.trans, .trans:hover {
+    -webkit-transition: all 277ms ease-in-out;
+    -moz-transition: all 277ms ease-in-out;
+    -o-transition: all 277ms ease-in-out;
+    transition: all 277ms ease-in-out;
+    -ms-transition: all 277ms ease-in-out;
+}
+.trans-fast, .trans-fast:hover {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+}
+/* .no-csstransforms .menu-handler.active .burger-1, .no-csstransforms .menu-handler.active .burger-2, .no-csstransforms .menu-handler.active .burger-3 {
+    display: none;
+}
+.no-csstransforms .menu-handler.active {
+    background: url(../images/mob_close.png) no-repeat scroll center center;
+}
+ */
+
+.menuBox {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10001;
+    background-color: #fff;
+}
+/*.menuBoxShow { right: 0px; }*/
+
+.mlogo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.mlogo img {
+    width: 100%;
+}
+ul.nav_mobile{
+    text-align: center;
+    padding: 5% 0px 0;
+     display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ul.nav_mobile a{
+    display: block;
+    padding: 12px 0px;
+    line-height: 1.4;
+}
+@media screen and (max-width:864px) {
+    .menu-handler {
+        right: 50px;
+    }
+    .menu-handler {
+        top: 22px;
+        display: block;
+    }
+    /* #indexheader.header-fixed .menu-handler {
+        margin-top: 0px;
+    }
+    .header-fixed .menu-handler {
+        margin-top: 0px;
+    } */
+    header ul.header_right {
+        display: none;
+    }
+    .menu-handler.active {
+        top: 10px;
+        right: 0;
+    }
+    .header-fixed{
+           
+   }
+   header div.wrapper{
+   height: 116px;
+   color: #313131;
+       z-index: 9999;
+   position: fixed;
+   width: 100%;
+   transition: all .3s ease;
+   /*padding-top: 20px;*/
+               top: 0;
+   background-color: #fff;
+   } 
+}
+@media screen and (max-width:864px) {
+    .menu-handler.active {
+        top: 10px;
+        right: 0;
+    }
+    .menu-handler {
+        right: 20px;
+    }
+}

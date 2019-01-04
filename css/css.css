@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* { margin: 0px; padding: 0px; }
+
+body { font-family: Microsoft YaHei,Arial; font-size: 14px; color: #555; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+
+a { text-decoration: none; outline: none; cursor: pointer; color: #555; }
+
+a:hover { color: #f60; }
+
+img { border: none; vertical-align: bottom; }
+
+i, em, cite { font-style: normal; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+* input { vertical-align: middle; float: left; outline: none; border: none; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+.wrap { width: 1200px; margin: 0 auto; }
+
+/***无关调用代码***/
+.button { position: fixed; z-index: 999; width: 100%; text-align: center; height: 77px; }
+.button a { display: inline-block; padding: 0 20px; margin: 20px 10px 0; line-height: 35px; border: 1px solid #597640; }
+.button a:hover, .button a.on { background: #fff; color: #fff; }
+.button.button1 { position: relative; }
+.button.button2 { background: #fff; }
+
+.header-block { height: 77px; }
+
+/****banner 样式1 ****/
+.banner1 { position: relative; width: 100%; min-width: 1200px; height: 686px; overflow: hidden; text-align: center; /***图片宽度 100%**/ /***图片宽度不设定**/     /**
+	ul {
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+	}***/ }
+.banner1 ul { position: relative; }
+.banner1 ul img { width: 100%; }
+.banner1 .banner-btn { z-index: 999; position: absolute; bottom: 100px; width: 100%; }
+.banner1 .banner-btn span { margin: 0 6px; width: 9px; height: 9px; border: 1px solid #fff; display: inline-block; border-radius: 50%; cursor: pointer; }
+.banner1 .banner-btn span.cur { background: #fff; }
+.banner1 .arrow { position: absolute; top: 50%; margin-top: -80px; background: rgba(0, 0, 0, 0.1); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#1A000000', endcolorstr='#1A000000'); z-index: 888; width: 50px; height: 160px; line-height: 150px; font-size: 40px; color: #fff; text-align: center; }
+.banner1 .arrow:hover { color: #597640; background: rgba(0, 0, 0, 0.1); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#1A000000', endcolorstr='#1A000000'); }
+.banner1 .arrow-l { left: 0; }
+.banner1 .arrow-r { right: 0; }
+
+/**** banner 样式2 ****/
+@-webkit-keyframes arrow { 0% { opacity: 0; -webkit-transform: translate3d(0px, 0px, 0px); }
+  33% { opacity: 1; -webkit-transform: translate3d(0px, 10px, 0px); }
+  66% { opacity: 1; -webkit-transform: translate3d(0px, 20px, 0px); }
+  100% { opacity: 0; -webkit-transform: translate3d(0px, 30px, 0px); } }
+@keyframes arrow { 0% { opacity: 0; transform: translate3d(0px, 0px, 0px); }
+  33% { opacity: 1; transform: translate3d(0px, 10px, 0px); }
+  66% { opacity: 1; transform: translate3d(0px, 20px, 0px); }
+  100% { opacity: 0; transform: translate3d(0px, 30px, 0px); } }
+@-ms-keyframes arrow { 0% { opacity: 0; -ms-transform: translate3d(0px, 0px, 0px); }
+  33% { opacity: 1; -ms-transform: translate3d(0px, 10px, 0px); }
+  66% { opacity: 1; -ms-transform: translate3d(0px, 20px, 0px); }
+  100% { opacity: 0; -ms-transform: translate3d(0px, 30px, 0px); } }
+.banner2 { position: relative; width: 100%; /** min-width: 1200px;**/ height: auto; overflow: hidden; }
+.banner2 li { width: 100%; height: 100%; }
+.banner2 li a { display: block; height: 100%; position: relative; transform-origin: center center; margin: 0; right: 0; }
+.banner2 li a img { display: block; width: 100%; height: auto; transform-origin: center center; position: absolute; left: 0; top: 0; -webkit-transition: transform 5s, opacity 2s; -o-transition: transform 5s, opacity 2s; -moz-transition: transform 5s, opacity 2s; transition: transform 5s, opacity 2s; }
+.banner2 .banner-btn { position: absolute; bottom: 15px; text-align: center; width: 100%; z-index: 888; }
+.banner2 .banner-btn span { display: inline-block; width: 9px; height: 9px; border: 1px solid #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; margin: 0 6px; cursor: pointer; }
+.banner2 .banner-btn span.cur { background: #fff; }
+.banner2 .scroll-down { position: absolute; left: 50%; margin-left: -16px; bottom: 60px; z-index: 888; width: 32px; height: 50px; cursor: pointer; -webkit-animation: arrow 900ms linear infinite; animation: arrow 900ms linear  infinite; background: url(../images/scroll_icon.png) center center no-repeat; }
+.banner2 .arrow { position: absolute; top: 50%; margin-top: -80px; background: rgba(0, 0, 0, 0.1); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#1A000000', endcolorstr='#1A000000'); z-index: 888; width: 50px; height: 160px; line-height: 150px; font-size: 40px; color: #fff; text-align: center; }
+.banner2 .arrow:hover { color: #597640; background: rgba(0, 0, 0, 0.1); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr='#1A000000', endcolorstr='#1A000000'); }
+.banner2 .arrow-l { left: 0; }
+.banner2 .arrow-r { right: 0; }
+
+/** 图片渐变大效果***/
+/*** .banner2 li.active  img { transform: matrix(1.08, 0, 0, 1.08, 0, 0); -webkit-transform: matrix(1.08, 0, 0, 1.08, 0, 0); }**/
+/*****banner 样式3 ******/
+.banner3 { width: auto; min-width: 1200px; text-align: center; }
+.banner3 .focusbox { position: relative; overflow: hidden; zoom: 1; }
+.banner3 #bannerslider { width: 1200px; height: 579px; margin: auto; position: relative; z-index: 1; }
+.banner3 #bannerslider ul { width: 100%; height: 100%; }
+.banner3 #bannerslider ul li a { display: block; width: 100%; height: 100%; overflow: hidden; }
+.banner3 #bannerslider ul li img { width: 100%; }
+.banner3 #bannerslider .wrappic { overflow: visible; position: absolute; z-index: 1; width: 100%; height: 100%; }
+.banner3 #bannerslider .next, .banner3 #bannerslider .prev { position: absolute; top: 50%; margin-top: -25px; z-index: 99; width: 30px; height: 57px; }
+.banner3 #bannerslider .next { margin: -25px 5px 0 0; }
+.banner3 #bannerslider .mask-left, .banner3 #bannerslider .mask-right, .banner3 #bannerslider .plan { background: #000; z-index: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; left: 1640px; }
+.banner3 #bannerslider .mask-left, .banner3 #bannerslider .mask-right { z-index: 4; left: -1200px; filter: alpha(Opacity=80); opacity: .8; background: #000; overflow: hidden; }
+.banner3 #bannerslider .mask-right { left: 1200px; }
+.banner3 #bannerslider .arrow-left { left: -60px; display: block; background: url(../images/bannerleft.png) no-repeat; }
+.banner3 #bannerslider .arrow-right { right: -60px; display: block; background: url(../images/bannerright.png) no-repeat; }
+
+/****banner 样式4 *****/
+.banner4 { height: auto; width: 100%; }
+.banner4 img { width: 100%; }
+.banner4 #pic { width: 100%; height: auto; }
+.banner4 .swiper-slide a { /*** display: none;**/ /**实现fade效果**/ position: relative; }
+.banner4 .swiper-slide-active a { /** display: block;***/ /**实现fade效果**/ }
+.banner4 .banner-btn { position: absolute; bottom: 50px; width: 100%; text-align: center; z-index: 999; }
+.banner4 .banner-btn span { display: inline-block; width: 53px; height: 5px; margin: 0 2.5px; cursor: pointer; background: #fff; }
+.banner4 .banner-btn span.swiper-pagination-bullet-active { background: #597640; }
+
+/***滚动图 样式1无缝滚动 ***/
+.pic-scroll { width: 100%; height: 200px; overflow: hidden; }
+.pic-scroll ul { height: 100%; float: left; }
+.pic-scroll li { float: left; height: 100%; }
+.pic-scroll li img { height: 300px; }
+.pic-scroll li a { cursor: zoom-in; }
+
+/***滚动图 样式3 多图显示***/
+.prolist { height: 450px; position: relative; }
+.prolist ul { overflow: hidden; height: 450px; }
+.prolist ul li { width: 370px; height: 100%; margin: 0 15px; padding-top: 2px; float: left; }
+.prolist ul li .img { text-align: center; width: 100%; height: 370px; overflow: hidden; background: #fff; -webkit-transition: all 0.3s linear 0s; -moz-transition: all 0.3s linear 0s; -o-transition: all 0.3s linear 0s; transition: all 0.3s linear 0s; position: relative; }
+.prolist ul li .img img { max-width: 100% !important; margin: auto; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.prolist ul li h3 { padding-top: 24px; line-height: 20px; height: 38px; overflow: hidden; -webkit-transition: all 0.5s linear 0s; -moz-transition: all 0.5s linear 0s; -o-transition: all 0.5s linear 0s; transition: all 0.5s linear 0s; }
+.prolist ul li:hover .img { -webkit-transform: translate3d(0, -2px, 0); -moz-transform: translate3d(0, -2px, 0); -o-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0); -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); }
+.prolist ul li:hover h3 { color: #597640; }
+.prolist .arrow { display: block; position: absolute; width: 40px; height: 40px; text-indent: -9999px; cursor: pointer; }
+.prolist .arrow.arrowl { left: -55px; top: 45%; background: url(../images/prev2.png) center no-repeat; -webkit-background-size: 40px 40px; background-size: 40px 40px; }
+.prolist .arrow.arrowl:hover { background: url(../images/prev3.png) center no-repeat; -webkit-background-size: 40px 40px; background-size: 40px 40px; }
+.prolist .arrow.arrowr { right: -55px; top: 45%; background: url(../images/next2.png) center no-repeat; -webkit-background-size: 40px 40px; background-size: 40px 40px; }
+.prolist .arrow.arrowr:hover { background: url(../images/next3.png) center no-repeat; -webkit-background-size: 40px 40px; background-size: 40px 40px; }
+
+/***滚动 样式4 整屏向下滚动***/
+
+/*# sourceMappingURL=css.css.map */
